@@ -35,6 +35,7 @@ def get_daily_stats():
             "date": item["dimensions"][0]["name"],
             "visits": item["metrics"][0],
             "users": item["metrics"][1],
+            "pageviews": item["metrics"][2],
         })
 
     return rows
